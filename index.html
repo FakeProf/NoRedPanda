@@ -28,11 +28,12 @@
             background-attachment: fixed;
             background-size: 100% 50%; 
             background-color:rgb(43,157,245);
-            margin:0;
+            margin:0 0 0 0;
             padding:0;
             text-align: right;
             color:white;
             font-family: Arial, Helvetica, sans-serif ;
+            background-position: center;;  
         }
     }
 
@@ -40,24 +41,93 @@
         color:white;
         text-decoration: none;
     }
-    p{
-        margin:2.8% 10% 0% 0 ;
-         
-        border: 50px solid rgb(43,157,245);;
-     background-color: rgb(43,157,245);
-    }
     
+    .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  margin:1% 10% 0% 0 ;
+  border: 30px solid rgb(43,157,245);;
+     background-color: rgb(43,157,245);
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
     
 
+
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 36px;
+  text-align: center;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color:black;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
     </style>
 </head>
 <body>
-    
-    <a href="https://magiceden.io/marketplace/no_red_panda?activeTab=items" target="_blank">CASINO</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<p>
+    <p><div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h4 class="animate-charcter"> 
+    <a href="https://magiceden.io/marketplace/no_red_panda?activeTab=items" target="_blank">MAGIC EDEN</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <a href="https://stake.diamondvaults.io/vault/NoRedPanda" target="_blank">STAKING</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <a href="https://twitter.com/NoRedPanda" target="_blank">TWITTER</a>
 </p>
+            </h4>
+      </div>
+       </div>
+          </div>
 
-
+          <div class="waviy">
+            <span style="--i:1">N</span>
+            <span style="--i:2">O</span> &nbsp
+            <span style="--i:3">R</span>
+            <span style="--i:4">e</span>
+            <span style="--i:5">d</span> &nbsp
+            <span style="--i:6">p</span>
+            <span style="--i:7">a</span>
+            <span style="--i:8">n</span>
+            <span style="--i:9">d</span>
+            <span style="--i:10">a</span>
+         
+           </div>
 </body>
 </html>
